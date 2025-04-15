@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>個人名片</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .fade-in {
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .logo-circle {
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      width: 60px;
+      height: 60px;
+      border-radius: 9999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.25rem;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white shadow-2xl rounded-2xl p-8 max-w-sm w-full text-center fade-in">
+    <!-- Logo -->
+    <div class="mx-auto mb-4">
+      <div class="logo-circle">WD</div>
+    </div>
+
+    <!-- 頭像 -->
+    <img
+      class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-indigo-500"
+      src="C:\Users\ASUS\OneDrive\Desktop\my project\images\我.jpg"
+      alt="頭像"
+    />
+
+    <!-- 姓名與職稱 -->
+    <h1 class="text-2xl font-bold text-gray-800">肉桂捲</h1>
+    <p class="text-indigo-600 mb-4">人資顧問 / 課程設計師</p>
+
+    <!-- 自我介紹 -->
+    <p class="text-gray-600 text-sm mb-6">
+      熱愛學習與分享，相信溝通是人與人之間最美好的橋樑。
+    </p>
+
+    <!-- 聯絡方式 -->
+    <div class="text-sm text-gray-700 space-y-1">
+      <p>📧 wdm@example.com</p>
+      <p>📱 0912-345-678</p>
+    </div>
+
+    <!-- 社群連結 -->
+    <div class="flex justify-center gap-4 mt-6 text-gray-500">
+      <a href="#" target="_blank" aria-label="LinkedIn" class="transition-transform duration-300 hover:scale-110 hover:text-indigo-600">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+          <path d="M19 0h-14c-2.76...Z" />
+        </svg>
+      </a>
+      <a href="#" target="_blank" aria-label="GitHub" class="transition-transform duration-300 hover:scale-110 hover:text-indigo-600">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+          <path d="M12 .5C5.73.5..." />
+        </svg>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
